@@ -1,0 +1,54 @@
+body, html {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: #d3c3c3;
+}
+.container {
+
+}
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-25deg) rotateY(60deg);
+  top: 50px;
+  cursor: pointer;
+
+}
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.font {
+  transform: translateZ(50px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(50px);
+  background-color: rgba(0, 255, 170, 0.5);
+}
+.top {
+  transform: rotateX(90deg) translateZ(50px);
+  background-color: rgba(54, 20, 50, 0.5);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+  background-color: rgba(140, 0, 255, 0.5);
+}
+.right {
+  transform: rotateY(90deg) translateZ(50px);
+  background-color: rgba(67, 80, 75, 0.5);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(50px);
+  background-color: rgba(169, 172, 37, 0.5);
+}
